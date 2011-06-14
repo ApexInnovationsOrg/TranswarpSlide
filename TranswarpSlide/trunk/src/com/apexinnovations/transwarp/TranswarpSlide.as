@@ -24,6 +24,10 @@
 			}
 		}
 		
+		protected function setupSlide():void {
+			// TODO
+		}
+		
 		protected function onAdded(event:Event):void {
 			gotoAndPlay(1);
 		}
