@@ -9,7 +9,7 @@
 	import flash.net.*;
 
 	public dynamic class TranswarpSlide extends MovieClip implements IConfigurationAcceptor {
-		const TESTOUT_URL:String = '//www.apexinnovations.com/doLaunchTest.php?ID=';
+		private const TESTOUT_URL:String = '//www.apexinnovations.com/doLaunchTest.php?ID=';
 		
 		private var _config:XML;
 		
