@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+<flexLibProperties includeAllClasses="false" useMultiPlatformConfig="false" version="3">
   <includeClasses>
+    <classEntry path="com.apexinnovations.transwarp.config.ConfigData"/>
     <classEntry path="com.apexinnovations.transwarp.TranswarpMovieClip"/>
     <classEntry path="com.apexinnovations.transwarp.TranswarpSlide"/>
     <classEntry path="com.apexinnovations.transwarp.components.ProgressBar"/>
     <classEntry path="com.apexinnovations.transwarp.components.Timeline"/>
     <classEntry path="com.apexinnovations.transwarp.components.TranswarpComponent"/>
+    <classEntry path="com.apexinnovations.transwarp.config.ConfigLoadedEvent"/>
     <classEntry path="com.apexinnovations.transwarp.config.IConfigurationAcceptor"/>
   </includeClasses>
   <includeResources/>
