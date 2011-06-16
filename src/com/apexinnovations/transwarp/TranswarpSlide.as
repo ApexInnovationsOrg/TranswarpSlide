@@ -1,5 +1,5 @@
 ﻿package com.apexinnovations.transwarp {
-	//import com.apexinnovations.transwarp.data.Courseware;
+	
 	import com.apexinnovations.transwarp.config.*;
 	
 	import flash.display.DisplayObject;
@@ -20,11 +20,7 @@
 			addEventListener(Event.ADDED_TO_STAGE, onAdded);
 			if(this.setupSlide is Function) {
 				this.setupSlide();
-			}
-		}
-		
-		protected function setupSlide():void {
-			// TODO
+			}		
 		}
 		
 		protected function onAdded(event:Event):void {
