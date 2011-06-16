@@ -8,18 +8,17 @@
 	import flash.events.Event;
 	import flash.net.*;
 
-	public dynamic class TranswarpSlide extends MovieClip implements IConfigurationAcceptor {
+	public dynamic class TranswarpSlide extends TranswarpMovieClip implements IConfigurationAcceptor {
 		private const TESTOUT_URL:String = '//www.apexinnovations.com/doLaunchTest.php?ID=';
 		
 		private var _config:XML;
 		
 		public function TranswarpSlide() {
 			super();
-			
 			stop();
 			
 			addEventListener(Event.ADDED_TO_STAGE, onAdded);
-			if(this.setupSlide !== null) {
+			if(this.setupSlide is Function) {
 				this.setupSlide();
 			}
 		}
