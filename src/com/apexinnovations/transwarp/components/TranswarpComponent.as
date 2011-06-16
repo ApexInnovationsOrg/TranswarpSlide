@@ -13,8 +13,8 @@ package com.apexinnovations.transwarp.components {
 		}
 		
 		private function validationHandler(event:Event):void {
-			validate();
 			removeEventListener(Event.ENTER_FRAME, validationHandler);
+			validate();
 		}
 		
 		public function validate():void {
