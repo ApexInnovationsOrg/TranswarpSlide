@@ -1,6 +1,7 @@
 ﻿package com.apexinnovations.transwarp.components {
 	import com.apexinnovations.transwarp.TranswarpMovieClip;
 	import com.apexinnovations.transwarp.TranswarpSlide;
+	import com.apexinnovations.transwarp.config.ConfigData;
 	
 	import flash.display.Graphics;
 	import flash.display.MovieClip;
@@ -82,7 +83,8 @@
 			if(progress == oldProgress)
 				return;
 			
-			var color:uint = 0xed1c24;
+			//var color:uint = 0xed1c24;
+			var color:uint = ConfigData.color;
 			var gfx:Graphics = bar.graphics;
 			
 			gfx.clear();
