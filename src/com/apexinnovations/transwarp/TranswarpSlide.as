@@ -23,8 +23,6 @@
 			if(this.setupSlide is Function) {
 				this.setupSlide();
 			}
-			if(stage && this.activate is Function)
-				this.activate();
 		}
 
 		protected function _$ts_onAdded(event:Event):void {
@@ -48,7 +46,9 @@
 			_timeline = new Timeline();
 			_timeline.height = 20;
 			_timeline.width = width * .8;
-			addChild(_timeline);		
+			_timeline.x = width * .1;
+			_timeline.y = height - verticalOffset;
+			addChild(_timeline);
 		}
 
 		public function TestOut(courseID:uint):void {
