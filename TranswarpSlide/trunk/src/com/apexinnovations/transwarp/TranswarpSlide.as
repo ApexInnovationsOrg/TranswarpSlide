@@ -1,6 +1,5 @@
 ﻿package com.apexinnovations.transwarp {
 
-	import com.apexinnovations.transwarp.components.Timeline;
 	import com.apexinnovations.transwarp.config.*;
 	
 	import flash.events.Event;
@@ -10,7 +9,6 @@
 		private const TESTOUT_URL:String = '//www.apexinnovations.com/doLaunchTest.php?ID=';
 
 		private var _config:XML;
-		protected var _timeline:Timeline;
 		protected var timelineNeedsSetup:Boolean;
 		protected var isLoaderInfoReady:Boolean = false;
 		protected var timelineVerticalOffset:Number;
