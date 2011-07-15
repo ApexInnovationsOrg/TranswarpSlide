@@ -1,7 +1,7 @@
 package com.apexinnovations.transwarp {
 	import flash.display.MovieClip;
 	
-	public class TranswarpMovieClip extends MovieClip {
+	public dynamic class TranswarpMovieClip extends MovieClip {
 		
 		public function TranswarpMovieClip() {
 			super();

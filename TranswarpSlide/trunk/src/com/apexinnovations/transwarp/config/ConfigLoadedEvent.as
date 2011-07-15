@@ -4,9 +4,9 @@ package com.apexinnovations.transwarp.config {
 	public class ConfigLoadedEvent extends Event {
 		
 		public static const CONFIG_LOADED:String = "configLoaded";
-		public var config:XML;
+		public var config:*;
 		
-		public function ConfigLoadedEvent(config:XML, bubbles:Boolean=false, cancelable:Boolean=false) {
+		public function ConfigLoadedEvent(config:*, bubbles:Boolean=false, cancelable:Boolean=false) {
 			this.config = config;
 			super(CONFIG_LOADED, bubbles, cancelable);
 		}

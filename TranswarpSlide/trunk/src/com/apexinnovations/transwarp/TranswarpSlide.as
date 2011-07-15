@@ -8,16 +8,14 @@
 	public dynamic class TranswarpSlide extends TranswarpMovieClip implements IConfigurationAcceptor {
 		private const TESTOUT_URL:String = '//www.apexinnovations.com/doLaunchTest.php?ID=';
 
-		private var _config:XML;
+		private var _config:*;
 		protected var timelineNeedsSetup:Boolean;
 		protected var isLoaderInfoReady:Boolean = false;
 		protected var timelineVerticalOffset:Number;
 		
 		public function TranswarpSlide() {
 			super();
-			
 			stop();
-			
 			addEventListener(Event.ADDED_TO_STAGE, onAdded);
 			addEventListener(Event.REMOVED_FROM_STAGE, onRemoved);
 			if(this.setupSlide is Function) {
@@ -37,11 +35,11 @@
 				this.deactivate();			
 		}
 		
-		public function get config():XML {
+		public function get config():* {
 			return _config;
 		}
 
-		public function set config(value:XML):void {
+		public function set config(value:*):void {
 			_config = value;
 			dispatchEvent(new ConfigLoadedEvent(_config));
 		}
