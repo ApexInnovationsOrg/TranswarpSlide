@@ -1,12 +1,11 @@
 ﻿package com.apexinnovations.transwarp {
-
 	import com.apexinnovations.transwarp.config.*;
 	
 	import flash.events.Event;
 	import flash.net.*;
 
 	public dynamic class TranswarpSlide extends TranswarpMovieClip implements IConfigurationAcceptor {
-		private const TESTOUT_URL:String = '//www.apexinnovations.com/doLaunchTest.php?ID=';
+		private const TESTOUT_URL:String = 'http://www.apexinnovations.com/doLaunchTest.php';
 
 		private var _config:*;
 		protected var timelineNeedsSetup:Boolean;
@@ -45,8 +44,15 @@
 		}
 
 		public function TestOut(courseID:uint):void {
-			var s:String = 's'; //(Courseware.instance.website.indexOf('https') == -1 ? '' : 's'); 
-			navigateToURL(new URLRequest('http' + s + TESTOUT_URL + courseID), '_self');
+			var req:URLRequest = new URLRequest(TESTOUT_URL);
+			var variables:URLVariables = new URLVariables();
+
+			variables.ID = courseID;
+			variables.userID = ConfigData.userID;
+
+			req.method = URLRequestMethod.POST;
+			req.data = variables;
+			navigateToURL(req, '_self');
 		}		
 		
 	}
