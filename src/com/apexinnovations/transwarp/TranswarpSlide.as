@@ -48,7 +48,7 @@
 			var variables:URLVariables = new URLVariables();
 
 			variables.ID = courseID;
-			variables.userID = ConfigData.userID;
+//			variables.userID = ConfigData.userID;
 
 			req.method = URLRequestMethod.POST;
 			req.data = variables;
